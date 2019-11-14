@@ -1,26 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Home from './components/Home';
+import Editor from './components/Editor';
+import Navigation from './components/Navigation';
+import Card from './components/Card';
+import data from './data';
+
+
+class App extends Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      ppl: data,
+      i: 0
+    }
+  }
+
+handleClick = (e) => {
+  if (e.target.name === 'next'){
+    this.setState({
+      i: this.state.i + 1
+    })
+    }else {
+      this.setState({
+        i: this.state.i - 1
+      })
+    }
+  }
+
+
+
+  render(){
+    return (
+      <div className="App">
+
+      <Home />
+      <Card />
+      <Navigation />
+      <Editor />
+
+
     </div>
-  );
+    )
+  }
+
 }
+
+
 
 export default App;

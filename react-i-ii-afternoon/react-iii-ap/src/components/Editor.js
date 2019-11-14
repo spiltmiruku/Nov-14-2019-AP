@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
 
-class Navigation extends Component {
+class Editor extends Component {
     constructor(props){
         super(props);
         this.state = {
-            previous: 0,
-            next: 0,
+            edit: 0,
+            delete: 0,
+            new: 0,
         }
     }
 
     render(){
         return(
+
             <div>
 
             </div>
@@ -18,4 +20,4 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation;
+export default Editor;
