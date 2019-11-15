@@ -1,8 +1,14 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
-const Homebutton = (props) => {
-   
-    return <h3> Home </h3>
+const Home = props => {
+  console.log(props);
+
+  return (
+    <div className='bluebar'>
+      <a href="www.apple.com"> Home </a>
+      {/* <button onClick={() => props.handleChangeName("Matias")}></button> */}
+    </div>
+  );
 };
 
 export default Home;
