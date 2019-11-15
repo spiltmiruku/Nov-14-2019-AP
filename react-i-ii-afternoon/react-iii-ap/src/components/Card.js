@@ -11,7 +11,7 @@ class Card extends Component {
         let person = this.props.person
         return(
             
-            
+            <div className='wrapper'>
             <div className='card-box'>
                 <div className='counter'>
                     {this.props.i + 1} / {this.props.tot}
@@ -21,14 +21,13 @@ class Card extends Component {
                 <h3>Job Title: {person.title}</h3>
                 <h3>Employer: {person.employer}</h3>
                 <br />
-                <br />
                 <h3>Favorite Movies: 
                 </h3>
                 <ol>
                 {person.favoriteMovies.map((e, i) => <li key={i}> {e} </li>)}
                 </ol>
                 </div>
-
+                </div>
         )
     }
 }
