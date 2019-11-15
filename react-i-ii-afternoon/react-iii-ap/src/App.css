@@ -3,14 +3,14 @@
   background-color: rgb(34, 34, 34);
 }
 
-
 .editor {
   display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	align-content: flex-end;
+  align-content: flex-end;
+  
 }
 
 .editbuttons {
@@ -18,18 +18,40 @@
     border: none;
     border-radius: 15px;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     text-align: center;
     font-weight: 900;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
+    font-size: 14px;
+    margin: -40px 10px 50px 2px;
     cursor: pointer;
     
 }
 
+.nav{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+  align-content: flex-end;
+  margin: 0px -155px;
+}
 
+.navbuttons {
+font-weight: 900;
+color: white;
+background: rgb(34, 34, 34);
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 18px;
+cursor: pointer;
+}
 
 a:link {
   text-decoration: none;
@@ -58,7 +80,8 @@ h2 {
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
-	align-content: stretch;
+  align-content: stretch;
+  margin-bottom: -80px;
 }
 
 .card-box {
