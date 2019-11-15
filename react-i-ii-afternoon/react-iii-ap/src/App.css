@@ -3,6 +3,34 @@
   background-color: rgb(34, 34, 34);
 }
 
+
+.editor {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-end;
+}
+
+.editbuttons {
+    background-color: rgb(60, 166, 216);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+
+
 a:link {
   text-decoration: none;
   color: black;
@@ -47,3 +75,4 @@ h2 {
   font-weight: 900;
   text-align: right;
 }
+

@@ -19,8 +19,11 @@ class Editor extends Component {
   };
 
   render() {
-    return <div>
-  <button onClick={this.props.delete}>Delete</button>
+    return <div className='editor'>
+            <button className='editbuttons'>Edit</button>
+            <button className='editbuttons' onClick={this.props.delete}>Delete</button>
+            <button className='editbuttons'>New</button>
+
     </div>;
   }
 }

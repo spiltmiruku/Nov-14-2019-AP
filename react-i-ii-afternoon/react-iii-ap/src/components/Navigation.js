@@ -14,6 +14,7 @@ class Navigation extends Component {
     render(){
         return(
             <div>
+            {/* <div className='previous'> */}
             <button name='previous' onClick={ this.props.handleClick }> &lt; Previous </button>
             <button name='next' onClick={ this.props.handleClick }> Next &gt; </button>
             </div>
